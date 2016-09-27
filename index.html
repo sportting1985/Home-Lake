@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home lake</title>
+    <link href="public/style/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="page">
+    <header>
+        <div class="logo" style="background-image: url(public/img/logo.png)" ></div>
+        <form name="search">
+            <input type="search" placeholder="Пошук по сайту">
+            <input type="submit" value="Знайти">
+        </form>
+    </header>
+    <div class="picture">
+        <div class="photo"></div>
+        <div class="signature">
+            <h1></h1>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Фотогалерея</a></li>
+            <li><a href="#">Розрахунки</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <article>
+            <h2>Озеро на дачі</h2>
+            <p>Розведенням риби, як правило, займаються великі рибні господарства. Але мало хто знає, що рибу можна розводити навіть у маленькому озері, влаштованому в звичайному дворі заміського будинку або на дачі. І виявляється, що в облаштуванні такої міні-рибоферми немає нічого складного або незвичайного. Можна викопати свій домашній ставок. Спочатку вам потрібно вирішити, де ви збираєтеся рити ставок. Вибір місця в саду за принципом “пальцем у небо” - далеко не найкращий варіант. До цього слід підійти грунтовно. Пам'ятайте, що дачне озерце буде постійною частиною цілісного пейзажу вашого саду, тому проявіть далекоглядність. Спочатку потрібно вирити котлован (найкраще поблизу річки, а потім збоку “завести” воду)
+                та визначитися з розміром водойми, яку ви плануєте створити. Вона може бути прямокутною, квадратною або будь-якої іншої форми. Переконайтеся в тому, що котлован був виритий досить глибоко, щоб водоймище не замерзало взимку. Пам'ятайте, що ваш ставок не повинен бути надто малим. Це найпоширеніша помилка, яку допускають новачки цієї справи. Річ у тім, що в кінцевому результаті водойма буде завжди трохи меншою, ніж ви її планували.
+            </p>
+            <h3>Фотогалерея</h3>
+
+            <div id="gallery" class="gallery">
+                <button class="arrow prev">⇦</button>
+                <ul >
+                    <li><img src="public/img/carp.jpg"></li>
+                    <li><img src="public/img/luce.jpg"></li>
+                    <li><img src="public/img/tolstolobik.jpg"></li>
+                </ul>
+                <button class="arrow next">⇨</button>
+            </div>
+
+            <h3>Розрахунок для початківця</h3>
+            <div class="calculator">
+                <input class="display__length__lake" type="text" name="expression" placeholder="Введіть довжину озера">
+                <input class="display__width__lake" type="text" name="expression" placeholder="Введіть ширину озера">
+                <input class="display__depth__lake" type="text" name="expression" placeholder="Введіть глибину озера">
+
+                <button class="calculator__btn js-calculate" disabled>Розрахувати</button>
+                <p>Обьем озера:</p>
+                <span class="calculator__lake__volume"></span>
+                <p>Рекомендована кількість риби:</p>
+                <span class="calculator__number__fish"></span>
+
+                <button class="calculator__btn js-clear">Очистити дані</button>
+            </div>
+        </article>
+    </div>
+    <footer>
+        <h3>Home lake 2016</h3>
+    </footer>
+</div>
+<script src="public/js/main.js"></script>
+</body>
+</html>
+

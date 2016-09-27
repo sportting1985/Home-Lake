@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 10px;
+    background-color: yellowgreen;
+    height: 100%;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+.page {
+    width: 1000px;
+    min-height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+header {
+    border-radius: 10px;
+    box-shadow:0 0 10px black;
+    background-color: maroon;
+    margin-bottom: 10px;
+    display: flex;
+    flex: 0 0 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    margin-left: 20px;
+    background-size: cover;
+    background-color: beige;
+}
+form[name=search] {
+    width: 240px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+input[type=search] {
+    color: whitesmoke;
+    background-color: #24272d;
+    border: 3px solid brown;
+    font-size: 13px;
+    border-radius: 5px;
+}
+input[type=submit]{
+    color: lightgoldenrodyellow;
+    background-color: #24272d;
+    border: 3px solid brown;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.picture{
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.photo{
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    border-radius: 10px;
+    border: 5px inset white;
+}
+.signature{
+    padding: 20px;
+    position: absolute;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: maroon ;
+    margin-bottom: 10px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+nav li {
+    padding: 5px 10px;
+}
+nav li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.main {
+    flex: 1 0 auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+article {
+    padding: 10px 20px;
+    background-color: whitesmoke;
+    flex: 1 0 0;
+    justify-content: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.gallery ul {
+    display:flex;
+    width: 620px;
+    height: 420px;
+    padding: 10px;
+    list-style-type: none;
+    font-size: 0;
+}
+.gallery li{
+    position: absolute;
+}
+.arrow {
+    height: 40px;
+    background: #ddd;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 24px;
+    line-height: 24px;
+    color: #444;
+
+}
+
+.calculator{
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    margin: 20px auto;
+}
+input[type="text"]{
+    width: auto;
+    margin-bottom: 10px;
+    border: 1px solid;
+}
+.calculator button{
+    height: 30px;
+}
+
+footer {
+    background-color: maroon;
+    border-radius: 10px;
+    display: flex;
+    flex: 0 0 60px;
+    align-items: center;
+    padding: 15px;
+
+}
+footer h3 {
+    color: white;
+}
+
+
